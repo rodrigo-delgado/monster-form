@@ -3,15 +3,15 @@
  * Plugin Name: Form Plugin For Monster Group Test.
  * Description: This form plugin submit a contact form though an Ajax call.
  * Author: Rodrigo Delgado.
- **/
+ */
 
 function form_test_plugin()
 {
-    /* Create a string variable to hold the content */ 
+    /**
+     *  Create a string variable to hold the content 
+     */ 
     $content = '';
     $content .= '<h2>Let’s get in touch!</h2>';
-
-    //$content .= '<form method="post" action"" >';
 
     $content .= '<label for="your_name">Enter your name</label>';
     $content .= '<input type="text" name="your_name" id="your_name" placeholder="Enter your name" required />';
@@ -22,7 +22,9 @@ function form_test_plugin()
     $content .= '<label for="phone">Enter your phone number</label>';
     $content .= '<input type="tel" name="phone" id="phone_number" placeholder="Enter your number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />';
     
-    /* Create a dropdown for services */
+    /** 
+     *  Create a dropdown for services 
+     */
     $content .= '<form action="/action_page.php">
                     <label for="service">Choose a service</label>
                     <select name="service" id="service">
@@ -33,8 +35,6 @@ function form_test_plugin()
                         </optgroup>
                     </select>
                 </form>';
-
-    //$content .= '<input type="text" name="service" placeholder="" required />';
 
     $content .= '<label for="your_comments">Questions or comments </label>';
     $content .= '<textarea name="your_comments" id="your_comments" placeholder="Enter your comments"> </textarea>';
