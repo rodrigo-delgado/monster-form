@@ -1,7 +1,8 @@
 <?php
 /**
  * Plugin Name: Form Plugin For Monster Group Test.
- * Description: This submit a contact form though an Ajax call.
+ * Description: This form plugin submit a contact form though an Ajax call.
+ * Author: Rodrigo Delgado.
  **/
 
 function form_test_plugin()
@@ -48,6 +49,7 @@ function form_add_javascript()
 {
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://monster-test.devrod.co.nz/contact/wp-content/plugins/form-test/js/form-test.js"></script>
     <?php 
 }
 add_action('wp_footer','form_add_javascript');
